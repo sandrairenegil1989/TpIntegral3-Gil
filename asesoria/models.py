@@ -9,8 +9,10 @@ class cliente(models.Model):
     apellido = models.CharField(max_length=50)
     tipo=models.CharField(max_length=50)
     documento=models.CharField(max_length=50)
-    email=models.CharField(max_length=50)
+    email=models.CharField(max_length=200)
+    estado=models.CharField(max_length=1)
     comentario=models.CharField(max_length=500, default='-')
+    acount_manager=models.CharField(max_length=200)
 
 class telefono (models.Model):
     tipo=models.CharField(max_length=50)
